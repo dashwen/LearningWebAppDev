@@ -2,13 +2,17 @@ body {
   background: #f9e933;
 }
 
+
 header, main, footer {
   min-width: 855px;
-}
+  padding: 20px; /* added padding to space out heading, main, and footer */
+
 
 header .container, main .container, footer .container {
   max-width: 855px;
   margin: auto;
+  font-family: 'PT Sans Narrow'; /* added font family to all elements */
+
 }
 
 header {
@@ -41,6 +45,7 @@ main .right {
   width: 285px;
 }
 
+
 footer .left {
   float: left;
   width: 570px;
@@ -51,11 +56,36 @@ footer .sitemap {
   width: 285px;
 }
 
-div.qa {
-  margin: auto;
-  width: 60%;
-  border: 3px solid #000000;
-  padding: 10px;
-  font-family: 'PT Sans Narrow', sans-serif;
+.sitemap h5{
+
 }
 
+/* qa font changed without borders */
+.qa {
+  margin: auto;
+  width: 60%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+}
+.qa h2{
+  font-size: 50px;
+}
+
+/* edit link information 
+links will have pt sans font WITHOUT NARROW */
+a:link {
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  color: darkorange;
+}
+/* when linked has been visited */
+a:visited
+{
+  color: grey;
+}
+
+/* when a link is hovered, color should change to black */
+a:hover
+{
+  color: black;
+}
