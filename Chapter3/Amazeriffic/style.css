@@ -12,7 +12,7 @@ header, main, footer {
 header .container, main .container, footer .container {
   max-width: 855px;
   margin: auto;
-  font-family: 'PT Sans Narrow';
+  font-family: 'PT Sans Narrow', sans-serif;
 
 }
 
@@ -57,7 +57,11 @@ footer .sitemap {
   width: 285px;
 }
 
-.sitemap h5{
+h5.sitemap {
+
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
 
 }
 
