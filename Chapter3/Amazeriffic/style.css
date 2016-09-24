@@ -2,16 +2,17 @@ body {
   background: #f9e933;
 }
 
-
+/* added padding to space out header main and footer */
 header, main, footer {
   min-width: 855px;
-  padding: 20px; /* added padding to space out heading, main, and footer */
+  padding: 20px;
+}
 
-
+/*added default font family of header main and footer */
 header .container, main .container, footer .container {
   max-width: 855px;
   margin: auto;
-  font-family: 'PT Sans Narrow'; /* added font family to all elements */
+  font-family: 'PT Sans Narrow';
 
 }
 
@@ -64,6 +65,7 @@ footer .sitemap {
 .qa {
   margin: auto;
   width: 60%;
+  padding: 50px;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 20px;
 }
@@ -78,7 +80,7 @@ a:link {
   font-family: 'PT Sans', sans-serif;
   color: darkorange;
 }
-/* when linked has been visited */
+
 a:visited
 {
   color: grey;
