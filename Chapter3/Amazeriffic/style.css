@@ -50,3 +50,12 @@ footer .sitemap {
   float: right;
   width: 285px;
 }
+
+div.qa {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #000000;
+  padding: 10px;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
