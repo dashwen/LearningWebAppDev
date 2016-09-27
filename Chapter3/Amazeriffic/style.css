@@ -65,18 +65,24 @@ footer .sitemap {
   color: gray;
 }
 
-/* qa font changed without borders */
+.contact {
+  color: gray;
+}
+
+/* qa font changed without borders
+   sourced from https://cocreate.localmotors.com/blog/post/zig-zag-borders-in-css/1205/ */
 .qa {
   margin: auto;
   width: 60%;
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   float:both;
-  position: relative;
+  position: relative;                       
   padding: 8px 8px 32px 8px;
   background: #dddccf;
 }
 
+/* sourced from https://cocreate.localmotors.com/blog/post/zig-zag-borders-in-css/1205/ */
 .qa:after {
   background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
   background-position: left-bottom;
@@ -89,6 +95,10 @@ footer .sitemap {
   left: 0px;
   width: 100%;
   height: 32px;
+}
+
+dd {
+  text-indent: 35px;
 }
 
 main h2{
