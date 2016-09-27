@@ -7,7 +7,7 @@ var main = function () {
     var addCommentFromInputBox = function (buttonClicked2) {
         var $new_comment;
 
-        if ($(".comment-input1 input").val() !== "" && buttonClicked1 == true) {
+        if ($(".comment-input1 input").val() !== "" && buttonClicked1 === true) {
             $new_comment = $("<p id='User1'>").text($(".comment-input1 input").val());
             $new_comment.hide();
             $(".comments").append($new_comment);
@@ -16,7 +16,7 @@ var main = function () {
             buttonClicked1 = false;
         }
 
-        else if($(".comment-input2 input").val() !== "" && buttonClicked2 == true) {
+        else if($(".comment-input2 input").val() !== "" && buttonClicked2 === true) {
             $new_comment = $("<p id='User2'>").text($(".comment-input2 input").val());
             $new_comment.hide();
             $(".comments").append($new_comment);
