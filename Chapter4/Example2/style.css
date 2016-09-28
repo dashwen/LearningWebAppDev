@@ -63,7 +63,7 @@ main {
 }
 
 .comment-input2 {
-  float: both;
+  float: none;
   width: 285px;
 }
 
@@ -98,15 +98,22 @@ main {
   padding: 5px;
   margin-bottom: 10px;
   border-radius: 5px;
-  background: lavender;
 }
 
-#User1 {
-  background: lavender;
-}
-
-#User2 {
+p:nth-child(odd).User1  {
   background: gainsboro;
+}
+
+p:nth-child(even).User1 {
+  background: lavender;
+}
+
+p:nth-child(odd).User2 {
+  background: yellow;
+}
+
+p:nth-child(even).User2 {
+  background: salmon;
 }
 
 footer {
