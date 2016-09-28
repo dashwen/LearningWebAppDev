@@ -21,7 +21,7 @@ header {
   overflow: auto;
 }
 
-header h1 {
+h1 {
   float: left;
   width: 570px;
   font-size: 30px;
@@ -58,8 +58,7 @@ footer .sitemap {
   width: 285px;
 }
 
-.sitemap h5, .contact h5{
-
+h5 {
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
   color: gray;
@@ -69,30 +68,28 @@ footer .sitemap {
   color: gray;
 }
 
-/* qa font changed without borders
+/* Q&A Portion of the page will be inside a zig-zag box
    sourced from https://cocreate.localmotors.com/blog/post/zig-zag-borders-in-css/1205/ */
 .qa {
   margin: auto;
   width: 60%;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 25px;
-  float:both;
   position: relative;                       
-  padding: 8px 8px 32px 8px;
-  background: #dddccf;
+  padding: 8px 8px 32px 8px;    /*CSS Lint throws a warning because width and padding are being used together */
+  background: #dddccf;          /*Our zig zag box feature will not work without using both */
 }
 
 /* sourced from https://cocreate.localmotors.com/blog/post/zig-zag-borders-in-css/1205/ */
 .qa:after {
   background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
-  background-position: left-bottom;
   background-repeat: repeat-x;
   background-size: 32px 32px;
   content: " ";
   display: block;
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 32px;
 }
@@ -101,7 +98,7 @@ dd {
   text-indent: 35px;
 }
 
-main h2{
+h2 {
   font-size: 50px;
   text-align: center
 }
@@ -114,13 +111,11 @@ a:link {
   color: darkorange;
 }
 
-a:visited
-{
+a:visited {
   color: grey;
 }
 
 /* when a link is hovered, color should change to black */
-a:hover
-{
+a:hover {
   color: black;
 }
